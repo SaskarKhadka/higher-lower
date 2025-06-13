@@ -32,7 +32,7 @@ jobs:
 
   deploy:
     if: ${{ github.ref_name == 'main' }}
-    needs: builr
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Render
